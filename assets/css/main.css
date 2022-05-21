@@ -2550,6 +2550,13 @@ input, select, textarea {
 				border: 0;
 			}
 
+		#header h2 {
+			max-width: 55ch;
+			word-spacing: .1em;
+			padding: 0 0 1em 0;
+			margin: 0 auto;
+		}
+
 	#nav {
 		cursor: default;
 		background-color: #333;
