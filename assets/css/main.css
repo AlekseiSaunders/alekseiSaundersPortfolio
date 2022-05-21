@@ -2792,7 +2792,7 @@ input, select, textarea {
 		}
 
 			#footer a:hover {
-				color: #37c0fb;
+				color: hsla(288, 100%, 36%, .733);
 				border-bottom-color: transparent;
 			}
 
