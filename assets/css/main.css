@@ -2701,10 +2701,11 @@ input, select, textarea {
 		}
 
 		#banner header h2 {
-			letter-spacing: 1.2px;
+			letter-spacing: 1.1px;
+			word-spacing: .08em;
 			display: inline-block;
 			margin: 0;
-			font-size: 1.25em;
+			font-size: 1.5em;
 			vertical-align: middle;
 		}
 
@@ -2713,7 +2714,7 @@ input, select, textarea {
 				}
 
 				#banner header h2 a {
-					border-bottom-color: rgba(255, 255, 255, 0.5);
+					border-bottom-color: rgba(243, 243, 243, 0.5);
 				}
 
 					#banner header h2 a:hover {
