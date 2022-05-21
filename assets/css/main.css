@@ -110,13 +110,13 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, opacity 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, opacity 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, opacity 0.2s ease-in-out;
-		color: hsla(288, 100%, 50%, 0.733);
+		color: hsla(288, 100%, 36%, .733);
 		text-decoration: none;
 		border-bottom: dotted 1px;
 	}
 
 		a:hover {
-			color: hsla(288, 100%, 40%, .9);
+			color: hsl(288, 100%, 26%, .9);
 			border-bottom-color: transparent;
 		}
 
@@ -2415,7 +2415,7 @@ input, select, textarea {
 		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
 		background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
 		background-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.15)), url("images/bg01.png");
-		background-color: #37c0fb;
+		background-color: hsla(288, 100%, 36%, 0.733);
 		border-radius: 5px;
 		border: 0;
 		color: #fff;
@@ -2435,7 +2435,7 @@ input, select, textarea {
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: #50c8fc;
+			background-color: hsla(288, 100%, 26%, 1);
 			color: #fff !important;
 		}
 
