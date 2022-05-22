@@ -2135,7 +2135,7 @@ input, select, textarea {
 
 			.image.medium img {
 				margin: 0 auto;
-				width: 70%;
+				width: 90%;
 			}
 			.image.medium.right {
 				padding-left: 20%;
@@ -2469,6 +2469,7 @@ input, select, textarea {
 		text-decoration: none;
 		font-weight: 600;
 		letter-spacing: -0.025em;
+		margin-top: .5em;
 	}
 
 		input[type="submit"]:hover,
