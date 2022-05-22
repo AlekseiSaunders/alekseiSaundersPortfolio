@@ -2123,13 +2123,18 @@ input, select, textarea {
 			margin: 0 0 2em 0;
 		}
 
-			.image.featured img {
+		.image.featured img {
 				display: block;
 				width: 100%;
-			}
-		.image.featured.shadowed img{
+		}
+
+		.shadowed_high {
 				box-shadow: var(--shadow-elevation-high);
 			}
+		.shadowed_medium {
+				box-shadow: var(--shadow-elevation-medium);
+			}
+
 
 /* Icon */
 
