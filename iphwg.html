@@ -32,7 +32,6 @@
 				</li>
 				<li><a href="https://www.linkedin.com/in/alekseisaunders/" class="icon brands fa-linkedin-in"
 						target="_blank"><span class="label">LinkedIn</span></a></li>
-				<!-- <li><a href="#" class="icon brands fa-google-plus-g"><span class="label">Google+</span></a></li> -->
 			</ul>
 			<!-- Nav -->
 			<nav id="nav">
@@ -44,23 +43,10 @@
 							<li><a href="madfishproject.html">Madagascar Fish</a></li>
 							<li><a href="natcards.html">Naturalist Study Cards</a></li>
 							<li><a href="iphwg.html">IPH&WG</a></li>
-							<!-- <li>
-																			<a href="#">Submenu</a>
-																			<ul>
-																				<li><a href="#">Lorem dolor</a></li>
-																				<li><a href="#">Phasellus magna</a></li>
-																				<li><a href="#">Magna phasellus</a></li>
-																				<li><a href="#">Etiam nisl</a></li>
-																				<li><a href="#">Veroeros feugiat</a></li>
-																			</ul>
-																		</li>
-																		<li><a href="#">Veroeros feugiat</a></li> -->
 						</ul>
 					</li>
 					<li><a href="about.html">About Me</a></li>
 					<li><a href="#get_in_touch">Contact</a></li>
-					<!-- <li><a href="two-sidebar.html">Two Sidebar</a></li>
-											<li><a href="no-sidebar.html">No Sidebar</a></li> -->
 				</ul>
 			</nav>
 
@@ -78,48 +64,67 @@
 							<article>
 								<header>
 									<h2>International Primate Health & Welfare Group</h2>
-									<p>Acting as a resource for ichthyologists, conservation professionals, and enthusiasts.</p>
+									<p>A portal to the papers and projects of the IPH&WG</p>
 								</header>
-								<p>The Madagascar Fishes website <a href="https://madagascarfish.com"
-										target="_blank">(madagascarfish.com)</a> is
-									a long running passion project of mine. The freshwater fish of Madagascar was the main conservation
-									focus of my previous career. I continue to be active in efforts to preserve these species in their
-									natural habitats.</p>
-								<p>This website has been a way for me to combine a passion for Software Engineering, an
-									interest in design, and a dedication to animal conservation. </p>
-								<a href="https://madagascarfish.com" target="_blank">
-									<span class="image featured shadowed_high">
-										<img src="./images/madagascarfishLaptop2022_05_22.jpg" alt="Madagascar Fishes Website" />
-									</span></a>
-								<h3>Technology Used</h3>
-								<p>The philosophy behind the Madagascar Fishes website is to provide <strong>information</strong> to
-									ichthyologists,
-									conservationists, and enthusiasts. As such, I wanted the site to be <strong>responsive and
-										performant.</strong> To
-									achieve those goals I kept the majority of the site as simple HTML and CSS. JavaScript, where it is
-									present, assists with the MapBox integration on the species, collection site, and research pages.</p>
-								<span class="image medium left">
-									<img class="shadowed_medium" src="./images/madfishlighthousesummary.jpg"
-										alt="Madagascar Fishes Website Lighthouse report" />
-								</span>
-								<p>Using google lighthouse helped me problem solve which resources were blocking a timely load. In
-									earlier iterations of the site both First Contentful Paint and Largest Contentful Paint were extremely
-									slow on 3G systems for the home page.</p>
-								<p>Using the picture element, srcset, and .webp formats helped decrease the time taken to paint the
-									hero-image, greatly speeding up the site. This has also allowed compatibility with older browsers
-									which are still common in Madagascar.</p>
-								<p>Further into the site architecture I've stuck to CSS only functionality to add tabs and cards. My
-									goal was to have a modern feel to the site and interactivity to aid in navigation, while keeping the
-									experience and functionality of site pleasant for users on slower connections.</p>
-								<h3>Site Development</h3>
-								<p>The amount of information surrounding the fish of Madagascar, their conservation programs, and the
-									collaborators working for their continued survival is immense. As such the site is in a continual
-									state of development. Goals currently are:
+								<p>The International Primate Health & Welfare Group is a group of health and welfare professionals that
+									work towards understanding best practices involved in the care, reproductive health, and wellness of
+									non-human primates. </p>
+								<p>A member of the IPH&WG reached out to me to help them develop an online resource for the group. Goals
+									for the site are:</p>
 								<ol>
-									<li>Present information on the majority of "common" species.</li>
-									<li>Present information on the key conservation programs currently active.</li>
-									<li>Present information on the collaborators that wish to be featured on the site.</li>
-									<li>Enable fundraising through a third-party site (most likely Kindest.com) </li>
+									<li>Promote the projects and papers of group members</li>
+									<li>Make resources available to others, professional or otherwise, who might benefit from the
+										collective group knowledge</li>
+									<li>Act as a fundraising platform to support current or future work by the group</li>
+									<li>Acknowledge donors who support the group and attract others who might have an interests in support
+									</li>
+								</ol>
+								<span class="image featured shadowed_high">
+									<img src="./images/IPHWG_homepage.jpg" alt="International Primate Health and Welfare Group Website" />
+								</span>
+
+								<h3 id="tech_used">Technology Used</h3>
+								<p>Based on the goals and needs of the IPH&WG I decided to develop a website based on a template usable
+									with the Ghost.io CMS/CRM platform.</p>
+								<p>Ghost meets the needs for a fairly easy content development platform. It will allow for the posting
+									of project updates and stories. Integrating posts with photo and video elements is also
+									straightforward.</p>
+								<p>The end users at IPH&GW are not programmers nor are they developers, I sought out a resource
+									providing an intuitive interface for updating the site and reaching current and potential members
+									through email newsletters</p>
+								<p>On the fundraising end, Ghost allows for membership levels, something that the group will be able to
+									leverage down the road as the comfort with the platform grows and their network expands.</p>
+								<p>The Ghost platform is also open source, built using Handlebars, and has a REST API for exporting
+									content. Down the road, if the IPH&WG's needs grow beyond their current template, further
+									customization is possible</p>
+
+								<h3 id="lessons_learned">Lessons Learned</h3>
+
+								<p>Drilling down into the needs of a client, versus the wants of a client, can be time consuming - but
+									it is one of the most important parts in web development to do well. As a designer/developer it is my
+									job to steward the client through the confusing options and shiny functionality they may or may not
+									need.</p>
+								<p>Once again, WYSIWYG editors, no matter how advanced the template they are built upon, are limiting.
+								</p>
+								<p>A large amount of time will go into making the navigation of the template editor and content creator
+									intuitive to casual users. While this is not the most interesting part of web development it will make
+									my experience of the platform solid and improve my communication skills.</p>
+								<p>One of the best ways to understand something is to be forced to explain it to professionals outside
+									the working scope of the project.</p>
+
+
+								<h3 id="site_development">Site Development</h3>
+								<p>The International Primate Health & Welfare Group website is still under development. We are
+									continuing to discuss project goals and end-user needs. As their desires become more solidified, I
+									will be drafting a full proposal, followed by a contract for site development, deployment, and 1-year
+									maintenance.</p>
+								<p>Key needs for the group are:</p>
+								<ol>
+									<li>A site that allows members to post project updates and results.</li>
+									<li>A resource for published papers.</li>
+									<li>A pathway for attracting and monetizing donors and sponsors</li>
+									<li>A straightforward explanation of the site's interface to allow member access to writing sections
+										while still limiting posting abilities to group editors.</li>
 								</ol>
 								</p>
 							</article>
@@ -132,28 +137,32 @@
 							<!-- Sidebar -->
 
 							<section>
-								<!-- <h3>Just a Subheading</h3>
-								<p>Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus.
-									Praesent semper mod quis eget mi. Etiam eu ante risus. Aliquam erat volutpat.
-									Aliquam luctus et mattis lectus sit amet pulvinar. Nam turpis et nisi etiam.</p>
+								<h3>Technology Used</h3>
+								<p>Providing a CRM/CMS for non-coding users to create blog-like posts and curate information. Client is
+									being introduced to template usage on the Ghost.io framework.
+								</p>
 								<footer>
-									<a href="#" class="button">Continue Reading</a>
-								</footer> -->
+									<a href="#tech_used" class="button">Continue Reading</a>
+								</footer>
 							</section>
 
 							<section>
-								<!-- <h3>Another Subheading</h3>
-								<ul class="links">
-									<li><a href="#">Amet turpis, feugiat et sit amet</a></li>
-									<li><a href="#">Ornare in hendrerit in lectus</a></li>
-									<li><a href="#">Semper mod quis eget mi dolore</a></li>
-									<li><a href="#">Consequat etiam lorem phasellus</a></li>
-									<li><a href="#">Amet turpis, feugiat et sit amet</a></li>
-									<li><a href="#">Semper mod quisturpis nisi</a></li>
-								</ul>
+								<h3>Lesson Learned</h3>
+								<p>Good communication is the key to any project moving past the conceptualization stage and successfully
+									into development.
+								</p>
 								<footer>
-									<a href="#" class="button">More Random Links</a>
-								</footer> -->
+									<a href="#lessons_learned" class="button">Continue Reading</a>
+								</footer>
+							</section>
+
+							<section>
+								<h3>Site Development</h3>
+								<p>This site is still in the proposal stage of development
+								</p>
+								<footer>
+									<a href="#site_development" class="button">Continue Reading</a>
+								</footer>
 							</section>
 
 						</div>
