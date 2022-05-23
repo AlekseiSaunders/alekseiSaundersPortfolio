@@ -84,39 +84,49 @@
 									mesh with her work schedule.</p>
 								<p>I was looking for a fun way to help her to practice animal identification (only one part of being a
 									naturalist) while waiting for an open slot in the course. </p>
+
 								<h3 id="tech_used">Technology Used</h3>
-								<p>The philosophy behind the Madagascar Fishes website is to provide <strong>information</strong> to
-									ichthyologists,
-									conservationists, and enthusiasts. As such, I wanted the site to be <strong>responsive and
-										performant.</strong> To
-									achieve those goals I kept the majority of the site as simple HTML and CSS. JavaScript, where it is
-									present, assists with the MapBox integration on the species, collection site, and research pages.</p>
+								<p>I wrote just a basic site in HTML and CSS. I used JavaScript to bring in the user inputs for region,
+									taxa, and number of study cards.</p>
 								<span class="image medium left">
-									<img class="shadowed_medium" src="./images/madfishlighthousesummary.jpg"
+									<img class="shadowed_medium" src="./images/naturalistCardFlipped.JPG"
 										alt="Madagascar Fishes Website Lighthouse report" />
 								</span>
-								<p>Using google lighthouse helped me problem solve which resources were blocking a timely load. In
-									earlier iterations of the site both First Contentful Paint and Largest Contentful Paint were extremely
-									slow on 3G systems for the home page.</p>
-								<p>Using the picture element, srcset, and .webp formats helped decrease the time taken to paint the
-									hero-image, greatly speeding up the site. This has also allowed compatibility with older browsers
-									which are still common in Madagascar.</p>
-								<p>Further into the site architecture I've stuck to CSS only functionality to add tabs and cards. My
-									goal was to have a modern feel to the site and interactivity to aid in navigation, while keeping the
-									experience and functionality of site pleasant for users on slower connections.</p>
+								<p>JavaScript builds the API query url with the user inputs. I iterate through the response object to
+									remove duplicate pictures and build an array of possible cards to build.</p>
+								<p>Based on the number of cards the user wishes to study, I randomize the images selected and build each
+									card using the response data.</p>
+								<p>The back of the card has buttons to record whether you identified the animal correctly or not.
+									Clicking on these buttons locks the card in place, and saves the response to a "score" that is kept in
+									local storage.</p>
+								<p>I used <a href="https://www.postman.com/" target="_blank">Postman</a> to help visualize the response
+									from the iNaturalist API and to tweak parameters to get the best return data. If there aren't enough
+									records from iNaturalist to create the number of study cards requested I alert the user and reset the
+									page</p>
+
 								<h3 id="lessons_learned">Lessons Learned</h3>
-								<p>Using google lighthouse helped me problem solve which resources were blocking a timely load. In
-									earlier iterations of the site both First Contentful Paint and Largest Contentful Paint were extremely
-									slow on 3G systems for the home page.</p>
+								<p>API documentation can be a mixed bag but the iNaturalist site was very helpful in crafting the needed
+									query url. Paired with Postman, to refine the API requests, I feel I'm getting good responses and can
+									visualize the returned objects well.</p>
+								<p>The response object handling is complicated by my desire to filter the object for duplicate images.
+									Moving this data into a smaller array, and then iterating over that array to build the pool of study
+									cards challenged me. I think I've created a descent solution, but one that could be refactored for
+									readability.</p>
+								<p>I'm looking forward to learning React. Building each card with an iteration over DOM element creation
+									and manipulation, although working here, just looks ... ugly.</p>
+								<p>This was my first experience with keeping data in local storage. I think it serves its purpose here
+									and it was fun to implement a score tracking system.</p>
+
+
 								<h3 id="site_development">Site Development</h3>
-								<p>The amount of information surrounding the fish of Madagascar, their conservation programs, and the
-									collaborators working for their continued survival is immense. As such the site is in a continual
-									state of development. Goals currently are:
+								<p>I think there is a lot of potential behind the study card idea. I like the card animation and sizing,
+									although the animation stutters if the user mouses in to the card mid-point.</p>
+								<p>Future Goals include:</p>
 								<ol>
-									<li>Present information on the majority of "common" species.</li>
-									<li>Present information on the key conservation programs currently active.</li>
-									<li>Present information on the collaborators that wish to be featured on the site.</li>
-									<li>Enable fundraising through a third-party site (most likely Kindest.com) </li>
+									<li>Add more information to card backs</li>
+									<li>Refactor card creation and API response handling</li>
+									<li>Use React to build the card content and html structure.</li>
+									<li>Include a tally of attempts to the local storage score</li>
 								</ol>
 								</p>
 							</article>
@@ -129,7 +139,8 @@
 							<!-- Sidebar -->
 							<section>
 								<h3>Technology Used</h3>
-								<p>HTML, CSS, and JavaScript. API call to the iNaturalist site to fetch images for the study cards. Local Storage to hold current and all time scores.
+								<p>HTML, CSS, and JavaScript. API call to the iNaturalist site to fetch images for the study cards.
+									Local Storage to hold current and all time scores.
 								</p>
 								<footer>
 									<a href="#tech_used" class="button">Continue Reading</a>
@@ -138,8 +149,10 @@
 
 							<section>
 								<h3>Lesson Learned</h3>
-								<p>
+								<p>Manipulating the iNaturalist API was fun and Postman really helped refine the queries I submitted.
 								</p>
+								<p>Using a framework to generate consistent cards (I'm thinking React) would have been easier than using
+									JS to generate DOM elements</p>
 								<footer>
 									<a href="#lessons_learned" class="button">Continue Reading</a>
 								</footer>
@@ -147,8 +160,8 @@
 
 							<section>
 								<h3>Site Development</h3>
-								<p>With approximately 100 species of endemic freshwater fish, most of them endangered, the
-									Madagascar Fishes website is in a constant state of development.
+								<p>The Naturalist Study Card site is currently at an Minimum Viable Product (MVP) stage. Refinements to
+									the input UI, score keeping, and card data are planned for the future.
 								</p>
 								<footer>
 									<a href="#site_development" class="button">Continue Reading</a>
