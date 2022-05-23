@@ -187,23 +187,19 @@
 					</section>
 					<section class="col-8 col-12-narrower">
 						<h3 id="get_in_touch">Get In Touch</h3>
-						<form>
-							<div class="row gtr-50">
-								<div class="col-6 col-12-mobilep">
-									<input type="text" name="name" id="name" placeholder="Name" />
-								</div>
-								<div class="col-6 col-12-mobilep">
-									<input type="email" name="email" id="email" placeholder="Email" />
-								</div>
-								<div class="col-12">
-									<textarea name="message" id="message" placeholder="Message" rows="5"></textarea>
-								</div>
-								<div class="col-12">
-									<ul class="actions">
-										<li><input type="submit" class="button alt" value="Send Message" /></li>
-									</ul>
-								</div>
-							</div>
+						<form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xknyynne"
+							method="post">
+							<fieldset id="fs-frm-inputs">
+								<label for="full-name">Full Name</label>
+								<input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+								<label for="email-address">Email Address</label>
+								<input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+								<label for="message">Message</label>
+								<textarea rows="5" name="message" id="message" placeholder="Please enter your message here."
+									required=""></textarea>
+								<input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+							</fieldset>
+							<input type="submit" value="Submit">
 						</form>
 					</section>
 				</div>
