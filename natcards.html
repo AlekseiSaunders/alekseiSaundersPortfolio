@@ -44,23 +44,10 @@
 							<li><a href="madfishproject.html">Madagascar Fish</a></li>
 							<li><a href="natcards.html">Naturalist Study Cards</a></li>
 							<li><a href="iphwg.html">IPH&WG</a></li>
-							<!-- <li>
-																			<a href="#">Submenu</a>
-																			<ul>
-																				<li><a href="#">Lorem dolor</a></li>
-																				<li><a href="#">Phasellus magna</a></li>
-																				<li><a href="#">Magna phasellus</a></li>
-																				<li><a href="#">Etiam nisl</a></li>
-																				<li><a href="#">Veroeros feugiat</a></li>
-																			</ul>
-																		</li>
-																		<li><a href="#">Veroeros feugiat</a></li> -->
 						</ul>
 					</li>
 					<li><a href="about.html">About Me</a></li>
 					<li><a href="#get_in_touch">Contact</a></li>
-					<!-- <li><a href="two-sidebar.html">Two Sidebar</a></li>
-											<li><a href="no-sidebar.html">No Sidebar</a></li> -->
 				</ul>
 			</nav>
 
@@ -78,20 +65,26 @@
 							<article>
 								<header>
 									<h2>Naturalist Study Cards</h2>
-									<p>Acting as a resource for ichthyologists, conservation professionals, and enthusiasts.</p>
+									<p>Helping my wife through the pandemic and learning about the iNaturalist API.</p>
 								</header>
-								<p>The Madagascar Fishes website <a href="https://madagascarfish.com"
-										target="_blank">(madagascarfish.com)</a> is
-									a long running passion project of mine. The freshwater fish of Madagascar was the main conservation
-									focus of my previous career. I continue to be active in efforts to preserve these species in their
-									natural habitats.</p>
-								<p>This website has been a way for me to combine a passion for Software Engineering, an
-									interest in design, and a dedication to animal conservation. </p>
-								<a href="https://madagascarfish.com" target="_blank">
+								<p>The Naturalist Study Cards project <a href="https://naturaliststudycards.netlify.app/"
+										target="_blank">(naturaliststudycards.netlify.app)</a> is
+									a project I took on to:</p>
+								<ol>
+									<li>Learn to manipulate the iNaturalist API</li>
+									<li>Give my wife a resource to study native animals in and around Colorado</li>
+									<li>Continue to play with "card" styles, including animation</li>
+								</ol>
+								<a href="https://naturaliststudycards.netlify.app/" target="_blank">
 									<span class="image featured shadowed_high">
-										<img src="./images/madagascarfishLaptop2022_05_22.jpg" alt="Madagascar Fishes Website" /></a>
-								</span>
-								<h3>Technology Used</h3>
+										<img src="./images/naturalistCardsWithFlip-3.JPG" alt="Madagascar Fishes Website" />
+									</span></a>
+								<p>In early 2020 my wife had expressed interest in enrolling in a Colorado Naturalist program through
+									the Audubon Society. The wait list for the program was long, and the other options to enroll didn't
+									mesh with her work schedule.</p>
+								<p>I was looking for a fun way to help her to practice animal identification (only one part of being a
+									naturalist) while waiting for an open slot in the course. </p>
+								<h3 id="tech_used">Technology Used</h3>
 								<p>The philosophy behind the Madagascar Fishes website is to provide <strong>information</strong> to
 									ichthyologists,
 									conservationists, and enthusiasts. As such, I wanted the site to be <strong>responsive and
@@ -111,7 +104,11 @@
 								<p>Further into the site architecture I've stuck to CSS only functionality to add tabs and cards. My
 									goal was to have a modern feel to the site and interactivity to aid in navigation, while keeping the
 									experience and functionality of site pleasant for users on slower connections.</p>
-								<h3>Site Development</h3>
+								<h3 id="lessons_learned">Lessons Learned</h3>
+								<p>Using google lighthouse helped me problem solve which resources were blocking a timely load. In
+									earlier iterations of the site both First Contentful Paint and Largest Contentful Paint were extremely
+									slow on 3G systems for the home page.</p>
+								<h3 id="site_development">Site Development</h3>
 								<p>The amount of information surrounding the fish of Madagascar, their conservation programs, and the
 									collaborators working for their continued survival is immense. As such the site is in a continual
 									state of development. Goals currently are:
@@ -130,30 +127,32 @@
 						<div id="sidebar">
 
 							<!-- Sidebar -->
-
 							<section>
-								<!-- <h3>Just a Subheading</h3>
-								<p>Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus.
-									Praesent semper mod quis eget mi. Etiam eu ante risus. Aliquam erat volutpat.
-									Aliquam luctus et mattis lectus sit amet pulvinar. Nam turpis et nisi etiam.</p>
+								<h3>Technology Used</h3>
+								<p>HTML, CSS, and JavaScript. API call to the iNaturalist site to fetch images for the study cards. Local Storage to hold current and all time scores.
+								</p>
 								<footer>
-									<a href="#" class="button">Continue Reading</a>
-								</footer> -->
+									<a href="#tech_used" class="button">Continue Reading</a>
+								</footer>
 							</section>
 
 							<section>
-								<!-- <h3>Another Subheading</h3>
-								<ul class="links">
-									<li><a href="#">Amet turpis, feugiat et sit amet</a></li>
-									<li><a href="#">Ornare in hendrerit in lectus</a></li>
-									<li><a href="#">Semper mod quis eget mi dolore</a></li>
-									<li><a href="#">Consequat etiam lorem phasellus</a></li>
-									<li><a href="#">Amet turpis, feugiat et sit amet</a></li>
-									<li><a href="#">Semper mod quisturpis nisi</a></li>
-								</ul>
+								<h3>Lesson Learned</h3>
+								<p>
+								</p>
 								<footer>
-									<a href="#" class="button">More Random Links</a>
-								</footer> -->
+									<a href="#lessons_learned" class="button">Continue Reading</a>
+								</footer>
+							</section>
+
+							<section>
+								<h3>Site Development</h3>
+								<p>With approximately 100 species of endemic freshwater fish, most of them endangered, the
+									Madagascar Fishes website is in a constant state of development.
+								</p>
+								<footer>
+									<a href="#site_development" class="button">Continue Reading</a>
+								</footer>
 							</section>
 
 						</div>
