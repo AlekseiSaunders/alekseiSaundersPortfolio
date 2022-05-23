@@ -3001,6 +3001,11 @@ input, select, textarea {
 					font-size: 1.25em;
 				}
 
+		/* Sidebar */
+			#sidebar {
+				display: none;
+			}
+
 		/* Box */
 
 			.box.highlight {
@@ -3322,6 +3327,11 @@ input, select, textarea {
 				display: block;
 				line-height: 2em;
 			}
+
+		/* Sidebar
+			#sidebar {
+				display: none;
+			} */
 
 		/* Banner */
 
