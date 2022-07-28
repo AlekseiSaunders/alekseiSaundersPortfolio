@@ -1,0 +1,236 @@
+<!DOCTYPE HTML>
+<!--
+	Arcana by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Alex Saunders - Software Engineer</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body class="is-preload">
+	<div id="page-wrapper">
+
+		<!-- Header -->
+		<div id="header">
+
+			<!-- Logo -->
+			<h1><a href="index.html" id="logo">Aleksei <em>(Alex)</em> Saunders</a></h1>
+			<!-- <h2>I write the code<em> that helps causes and companies share their vision and </em>change the world for the
+				better</h2> -->
+			<ul class="icons">
+				<li><a href="https://twitter.com/alekseisaunders" class="icon brands fa-twitter" target="_blank"><span
+							class="label">Twitter</span></a></li>
+				<!-- <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li> -->
+				<li><a href="https://github.com/AlekseiSaunders" class="icon brands fa-github" target="_blank"><span
+							class="label">GitHub</span></a>
+				</li>
+				<li><a href="https://www.linkedin.com/in/alekseisaunders/" class="icon brands fa-linkedin-in"
+						target="_blank"><span class="label">LinkedIn</span></a></li>
+				<li><a href="Aleksei_Saunders_Resume.pdf" target="_blank" class="icon fa-solid fa-file-lines"><span
+							class="label">Resume</span></a></li>
+			</ul>
+			<!-- Nav -->
+			<nav id="nav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li class="current">
+						<a href="projects.html">Recent Projects</a>
+						<ul>
+							<li><a href="moviefinder.html">Movie Finder with React</a></li>
+							<li><a href="natcards.html">Naturalist Study Cards</a></li>
+							<li><a href="madfishproject.html">Madagascar Fish</a></li>
+							<li><a href="otherprojects.html">Other Projects</a></li>
+						</ul>
+					</li>
+					<li><a href="about.html">About Me</a></li>
+					<li><a href="#get_in_touch">Contact</a></li>
+				</ul>
+			</nav>
+
+		</div>
+
+		<!-- Main -->
+		<section class="wrapper style1">
+			<div class="container">
+				<div class="row gtr-200">
+					<div class="col-8 col-12-narrower">
+						<div id="content">
+
+							<!-- Content -->
+
+							<article>
+								<header>
+									<h2>Movie Finder</h2>
+									<p>Utilizing a Figma design file to build out a movie finder SPA</p>
+								</header>
+								<p>I enjoy the planning and problem solving that comes with receiving a Figma design file. The puzzle
+									that is turning a design into a functional website that reflects the designer's intentions and
+									maintains the desired look and feel across multiple devices and clients is a fun challenge.</p>
+								<p>The Frontend Developer path on the Scrimba learning platform is something I've been enjoying lately;
+									Especially the solo projects that are more common as I've gotten toward the end of the course. The
+									Movie Finder project involved using an API to fetch movies that matched a user's search criteria.</p>
+								<p>The original project called for allowing the user to save movies to a watchlist kept in local
+									storage, allowing the watchlist to be retrieved on a separate page, and remove movies from the list,
+									and local storage.</p>
+								<p>My rendition of the original project can be found on Netlify at <a
+										href="https://beamish-paprenjak-e81e78.netlify.app/" target="_blank"> Scrimba Movie Picker</a></p>
+								<span class="image featured shadowed_high">
+									<img src="./images/originalMovieWatchlistLight.JPG" alt="Scrimba movie finder" />
+								</span>
+								<p>I enjoyed the original, but I wanted an excuse to practice rending components with React and passing
+									props from an API generated array into those components. My updated project (shown below) can be also
+									be found on
+									Netlify at <a href="https://zippy-arithmetic-5c73a6.netlify.app/" target="_blank">Movie Finder using
+										React</a></p>
+								<p>Just to be clear - in no way do I endorse Jurassic Park III</p>
+								<span class="image featured shadowed_high">
+									<img src="./images/movieFinderDark.JPG" alt="Movie Finder with React" />
+								</span>
+								<h3 id="tech_used">Technology Used</h3>
+								<p>The final project utilizes HTML, CSS, JavaScript, and React. I use an asynchronous fetch to request
+									and retrieve data from an API and turn the results into an array of data to use when passing props
+									into my React component.</p>
+								<p>I utilized <a href="https://www.postman.com/" target="_blank">Postman</a> to help visualize the data
+									coming back from the movie database API cutting down on the trial an error sometimes needed to find
+									usable data (not all APIs are created equally).</p>
+								<p>I use flexbox to layout both the static head elements and the dynamically generated movie components.
+									I'm also using CSS variables to allow for the switching between light and dark modes.</p>
+
+
+								<h3 id="lessons_learned">Lessons Learned</h3>
+
+								<p>I was super happy that I could use React to build out the dynamically generated cards. This was my
+									first project where I added React to an already written code-base.</p>
+								<p>My original intent was to copy the functionality of adding to and removing from the watchlist. I
+									managed to get the values saved to localStorage, much like the original design, but realized that I
+									couldn't link to a second page that also built on React components.
+								</p>
+								<p>I'm still fairly early on in my learning and working with React. I can see how passing state will
+									help in the further development of this project and how using React router might be one option for
+									enabling the watchlist.</p>
+
+								<h3 id="site_development">Site Development</h3>
+								<p>Goals are:</p>
+								<ul>
+									<li>Use React to create a Header component, not just the movie card components</li>
+									<li>Store the addition or subtraction of a movie from the watchlist in State</li>
+									<li>Use that state to render the user's watchlist</li>
+								</ul>
+							</article>
+
+						</div>
+					</div>
+					<div class="col-4 col-12-narrower">
+						<div id="sidebar">
+
+							<!-- Sidebar -->
+
+							<section>
+								<h3>Technology Used</h3>
+								<p>HTML, CSS, JavaScript, React, asynchronous functions, API fetch and retrieval of data.
+								</p>
+								<footer>
+									<a href="#tech_used" class="button">Continue Reading</a>
+								</footer>
+							</section>
+
+							<section>
+								<h3>Lesson Learned</h3>
+								<p>I need to go back to the drawing board if I want to make this project a more functional single page
+									application as opposed to a hybrid of React and traditional HTML.
+								</p>
+								<footer>
+									<a href="#lessons_learned" class="button">Continue Reading</a>
+								</footer>
+							</section>
+
+							<section>
+								<h3>Site Development</h3>
+								<p>Enabling addition and subtraction to a watchlist. Building out that watchlist with React components.
+								</p>
+								<footer>
+									<a href="#site_development" class="button">Continue Reading</a>
+								</footer>
+							</section>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<div id="footer">
+			<div class="container">
+				<div class="row">
+					<section class="col-4 col-12-narrower col-12-mobilep">
+						<h3>Other Recent Projects</h3>
+						<ul class="links">
+							<li><a href="natcards.html">Naturalist Study Cards</a></li>
+							<li><a href="madfishproject.html">Madagascar Fish</a></li>
+							<li><a href="otherprojects.html">Other Projects</a></li>
+						</ul>
+					</section>
+					<section class="col-8 col-12-narrower">
+						<h3 id="get_in_touch">Get In Touch</h3>
+						<form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xknyynne"
+							method="post">
+							<fieldset id="fs-frm-inputs">
+								<label for="full-name">Full Name</label>
+								<input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+								<label for="email-address">Email Address</label>
+								<input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+								<label for="message">Message</label>
+								<textarea rows="5" name="message" id="message" placeholder="Please enter your message here."
+									required=""></textarea>
+								<input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+							</fieldset>
+							<input type="submit" value="Submit">
+						</form>
+					</section>
+				</div>
+			</div>
+
+			<!-- Icons -->
+			<ul class="icons">
+				<li><a href="https://twitter.com/alekseisaunders" class="icon brands fa-twitter" target="_blank"><span
+							class="label">Twitter</span></a></li>
+				<!-- <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li> -->
+				<li><a href="https://github.com/AlekseiSaunders" class="icon brands fa-github" target="_blank"><span
+							class="label">GitHub</span></a>
+				</li>
+				<li><a href="https://www.linkedin.com/in/alekseisaunders/" class="icon brands fa-linkedin-in"
+						target="_blank"><span class="label">LinkedIn</span></a></li>
+				<li><a href="Aleksei_Saunders_Resume.pdf" target="_blank" class="icon fa-solid fa-file-lines"><span
+							class="label">Resume</span></a></li>
+				<!-- <li><a href="#" class="icon brands fa-google-plus-g"><span class="label">Google+</span></a></li> -->
+			</ul>
+
+			<!-- Copyright -->
+			<div class="copyright">
+				<ul class="menu">
+					<li>&copy; Aleksei Saunders. All rights reserved</li>
+				</ul>
+			</div>
+
+		</div>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.dropotron.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
